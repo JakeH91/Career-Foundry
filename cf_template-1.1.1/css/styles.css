@@ -1,0 +1,218 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	padding-top: 39px;
+	position: relative;
+}
+
+.col-md-3,
+.col-xs-6 {
+	padding: 0;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+.container {
+	padding-top: 50px;
+}
+
+/* HOME STYLINGS */
+
+.projectName,
+ul.nav {
+	text-transform: uppercase;
+}
+
+.projectName a {
+	color: white;
+}
+
+.carousel-caption {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	top: 15%;
+	left: 15%;
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+	background-color: rgba(0,0,0,.3);
+	padding: 5px;
+}
+
+/* ABOUT */
+
+.header {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.left {
+	float: left;
+}
+
+.intro-image {
+	width: 80%;
+	margin: 0 10% 5%;
+}
+
+.intro,
+.skills {
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.intro p,
+.skills {
+	margin-top: 2em;
+	font-family: "Futura", Helvetica, Arial, sans-serif;
+	font-size: 2em;
+	font-weight: 100;
+}
+
+.right {
+	float: right;
+}
+
+.skills h3 {
+	margin-top: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#skill-list {
+	padding: 0;
+	list-style: none;
+}
+
+.main-text {
+	clear: both;
+	padding-top: 60px;
+}
+
+/* CONTACT STYLINGS */
+
+
+
+.contact-container {
+	background-image: url("../img/contact_background.JPG");
+	background-attachment: fixed;
+	background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.info_box {
+	width: 40%;
+	height: 400px;
+	display: inline-block;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.basic_contact {
+	padding: 10px;
+	margin-bottom: 40px;
+}
+
+.basic_contact h1 {
+	margin-bottom: 10px;
+}
+
+span.push {
+	position: relative;
+	top: 3px;
+	margin-right: 10px;
+	color: white;
+}
+
+span.push:hover {
+	color: blue;
+}
+
+.email {
+	margin-bottom: 30px;
+}
+
+.phone {
+	margin-top: 0;
+}
+
+.social h4 {
+	display: block;
+	width: 250px;
+	margin: 0 auto 10px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.links p{
+	color: white;
+	background-color: black;
+	padding: 10px;
+	border: 1px solid white;
+	width: 100px;
+	display: inline-block;
+	margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Lora', serif;
+}
+
+.contact-container h1 {
+		color: #684122;
+}
+
+.email, .phone {
+	padding: 5px 10px;
+	display: inline-block;
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 5px;
+	color: white;
+}
+
+p {
+	font-family: 'Overpass', sans-serif;
+}
+hr.short {
+	width: 90%;
+	margin: 20px auto;
+}
+
+/* WORK */
+.work-container {
+  margin-top: 60px;
+}
+
+.work-image {
+	margin: 5%;
+	width: 90%;
+}
+
+.work-image:hover {
+	box-shadow: 2px 2px 5px black;
+}
+
+/* FAQ */
+
+.panel-default>.panel-heading {
+	background-color: #CFE4E4;
+}
