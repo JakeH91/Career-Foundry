@@ -13,12 +13,27 @@ body {
 	padding: 0;
 }
 
+h1 {
+	font-size: 2em;
+}
+
 h2 {
 	font-size: 1.8em;
 }
 
 h3 {
 	font-size: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Lora', serif;
+}
+
+p {
+	font-family: 'Overpass', sans-serif;
 }
 
 .container {
@@ -66,33 +81,37 @@ ul.nav {
 	margin: 0 10% 5%;
 }
 
-.intro,
-.skills {
+.intro {
 	text-align: center;
-	margin-bottom: 5%;
 }
 
-.intro p,
+blockquote {
+	border-left: none;
+}
+
+.intro p {
+	margin-top: 3em;
+}
+
 .skills {
-	margin-top: 2em;
-	font-family: "Futura", Helvetica, Arial, sans-serif;
-	font-size: 2em;
-	font-weight: 100;
+	margin-top: 3em;
 }
 
-.right {
-	float: right;
-}
 
-.skills h3 {
-	margin-top: 0;
+.skills h2 {
 	text-align: center;
-	text-transform: uppercase;
 }
 
-#skill-list {
-	padding: 0;
+.skills ul {
+	padding-left: 0;
 	list-style: none;
+	text-align: left;
+	float: left;
+	width: 50%;
+}
+
+#skill-list li {
+	padding-bottom: 5px;
 }
 
 .main-text {
@@ -170,13 +189,6 @@ span.push:hover {
 	margin-top: 0;
 }
 
-h1,
-h2,
-h3,
-h4 {
-	font-family: 'Lora', serif;
-}
-
 .contact-container h1 {
 		color: #684122;
 }
@@ -189,9 +201,8 @@ h4 {
 	color: white;
 }
 
-p {
-	font-family: 'Overpass', sans-serif;
-}
+
+
 hr.short {
 	width: 90%;
 	margin: 20px auto;
@@ -205,6 +216,7 @@ hr.short {
 .work-image {
 	margin: 5%;
 	width: 90%;
+	border: 1px solid black;
 }
 
 .work-image:hover {
