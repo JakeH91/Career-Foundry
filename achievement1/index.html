@@ -22,6 +22,15 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
       
@@ -46,9 +55,9 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
           <li><a href="#work">Work</a></li>
           <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div> <!-- END navbar-collapse -->
     
@@ -179,39 +188,6 @@ col-xs-6 col-sm-offset-0 col-sm-4 col-md-3">
   </div> <!-- END ABOUT container -->
 
 
-  <!-- CONTACT -->
-  <div class="container contact-container" id="contact">
-    <div class="row">
-      <div class="col-xs-12 col-sm-7 basic_contact">
-        <h1>Contact Me</h1>
-        <p>
-          If you've been impressed or intruiged so far by what you've seen, feel free to get in contact with me. I'm happy to help with any projects you might be working on, and I'm more than happy if you are just looking for a chat!
-        </p>
-        <h2 class="email">
-          <span class="glyphicon glyphicon-envelope push"></span>
-          <span>Jake_Hill666@hotmail.co.uk</span>
-        </h2>
-      </div>
-      <div class="col-xs-12 col-sm-7 basic_contact">
-        <p>Or you could try giving me a call:</p>
-        <h3 class="phone">
-          <span class="glyphicon glyphicon-earphone push"></span>
-          +4740550346
-        </h3>
-        <div class="social">
-          <h4>
-            <span class="glyphicon glyphicon-user push"></span>
-            Social Networks:
-          </h4>
-          <a href="https://www.facebook.com/JakeREHill" class="links"><p>FaceBook</p></a>
-          <a href="https://github.com/JakeH91" class="links"><p>GitHub</p></a>
-        </div>  
-      </div>
-    </div> <!-- END ROW -->
-     
-  </div> <!-- END CONTACT-CONTAINER -->
-  <hr class="short"> 
-
   <!-- WORK -->
   <div class="container work-container" id="work">
     <h1>Some Projects I've Worked On</h1>
@@ -243,7 +219,6 @@ col-xs-6 col-sm-offset-0 col-sm-4 col-md-3">
     </div>
     <hr>
   </div> <!-- END WORK CONTAINER -->
-
 
   <!-- FAQ -->
   <div class="container faq-container" id="faq">
@@ -304,8 +279,80 @@ col-xs-6 col-sm-offset-0 col-sm-4 col-md-3">
     </div>
   </div> <!-- END FAQ CONTAINER -->
 
-  <!--  JavaScript  -->
 
+  <div class="video embed-responsive embed-responsive-16by9">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UR_yCO7-aIU" allowfullscreen></iframe>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="container contact-container" id="contact">
+    <div class="contact-intro">
+      <h1>Contact Me</h1>
+      <p>Still have some unanswered questions? Feel free to add me on social media, or send me a message directly!</p>
+    </div>
+    <div class="fixed-background">
+      <div class="row">
+        <div class="col-xs-12 col-sm-5 basic_contact">
+          <h2>Add Me...</h2>
+          <h3 class="email">
+            <span class="glyphicon glyphicon-envelope push"></span>
+            <span>Jake_Hill666@hotmail.co.uk</span>
+          </h3>
+          <h3 class="phone">
+            <span class="glyphicon glyphicon-earphone push"></span>
+            +4740550346
+          </h3>
+          <div class="social">
+            <a href="https://www.facebook.com/JakeREHill" class="links"><img title="Facebook" src="img/facebook.png"></a>
+            <a href="https://github.com/JakeH91" class="links"><img title="Github" src="img/github.png"></a>
+            <a href="https://www.linkedin.com/in/jake-hill-97236a20/" class="links"><img title="LinkedIn" src="img/linked-in.png"></a>
+            <a href="https://twitter.com/JakeREHill" class="links"><img title="Twitter" src="img/twitter.png"></a>
+            <a href="https://www.freecodecamp.com/jakeh91" class="links"><img title="FreeCodeCamp" src="img/freecodecamp.png"></a>
+          </div> 
+        </div> <!-- END basic_contact -->
+        
+        <div class="col-xs-12 col-md-7 contact-form">
+          <h2>Or Say Hello!</h2>
+          <form>
+            <div class="form-group name">
+              <label for="name" class="sr-only">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Please enter your name...">
+            </div>
+
+            <div class="form-group number">
+              <label for="number" class="sr-only">Phone Number (optional)</label>
+              <input type="number" class="form-control" id="number" placeholder="and number (optional)...">
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="sr-only">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="And your email address..." required=”required”>
+            </div>
+            <label for="message" class="sr-only">Message</label>
+            <textarea placeholder="What would you like to say?" class="form-control" id="message" style="resize:none" cols="30" rows="5" required=”required”></textarea>
+            <button type="submit" class="btn btn-primary">Send!</button>
+          </form>  
+        </div> <!-- END contact-form -->
+      </div>
+    </div>
+    
+     
+  </div> <!-- END CONTACT-CONTAINER -->
+  
+  <footer>
+    <div id="twitter">
+      <a href="https://twitter.com/JakeREHill" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false">Follow</a>
+    </div>
+
+    <div  id="facebook" class="fb-like" data-href="http://physiotherapist-dog-70104.bitballoon.com" data-layout="standard" data-action="like" data-show-faces="true" data-share="true">
+    </div>
+    <div  id="copyright">
+      <p>&copy; Jake Hill 2017</p>
+    </div>
+    
+  </footer>
+  <!--  JavaScript  -->
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -321,7 +368,9 @@ col-xs-6 col-sm-offset-0 col-sm-4 col-md-3">
         });
         return false;
     });
-</script>
+  </script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+  </script>
 
 </body>
 </html>

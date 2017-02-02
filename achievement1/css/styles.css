@@ -72,10 +72,6 @@ ul.nav {
 	margin-bottom: 40px;
 }
 
-.left {
-	float: left;
-}
-
 .intro-image {
 	width: 80%;
 	margin: 0 10% 5%;
@@ -116,102 +112,11 @@ blockquote {
 
 .main-text {
 	clear: both;
-	padding-top: 60px;
+	padding-top: 20px;
 }
 
-/* CONTACT STYLINGS */
-
-
-
-.contact-container {
-	background-image: url("../img/contact_background.JPG");
-	background-attachment: fixed;
-	background-size: cover;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-
-.info_box {
-	width: 40%;
-	height: 400px;
-	display: inline-block;
-	position: absolute;
-	top: 40px;
-	left: 40px;
-	padding: 20px;
-	border-radius: 10px;
-}
-
-.basic_contact {
-	padding: 10px;
-	margin-bottom: 40px;
-}
-
-.basic_contact h1 {
-	margin-bottom: 10px;
-}
-
-span.push {
-	position: relative;
-	top: 3px;
-	margin-right: 10px;
-	color: white;
-}
-
-span.push:hover {
-	color: blue;
-}
-
-.email {
-	margin-bottom: 30px;
-}
-
-.phone {
-	margin-top: 0;
-}
-
-.social h4 {
-	display: block;
-	width: 250px;
-	margin: 0 auto 10px;
-	text-transform: uppercase;
-	color: white;
-}
-
-.links p{
-	color: white;
-	background-color: black;
-	padding: 10px;
-	border: 1px solid white;
-	width: 100px;
-	display: inline-block;
-	margin-top: 0;
-}
-
-.contact-container h1 {
-		color: #684122;
-}
-
-.email, .phone {
-	padding: 5px 10px;
-	display: inline-block;
-	background-color: rgba(0,0,0,0.2);
-	border-radius: 5px;
-	color: white;
-}
-
-
-
-hr.short {
-	width: 90%;
-	margin: 20px auto;
-}
 
 /* WORK */
-.work-container {
-  margin-top: 60px;
-}
 
 .work-image {
 	margin: 5%;
@@ -223,8 +128,115 @@ hr.short {
 	box-shadow: 2px 2px 5px black;
 }
 
+
 /* FAQ */
 
 .panel-default>.panel-heading {
 	background-color: #CFE4E4;
+}
+
+
+/* VIDEO */
+.video {
+	width: 90%;
+	margin: 39px auto 0;
+}
+
+
+/* CONTACT STYLINGS */
+
+.contact-container {
+	width: 100%;
+	padding: 39px 0 0;
+	color: white;
+}
+
+.contact-container h2 {
+	color: white;
+	font-weight: 900;
+}
+
+.contact-intro {
+	margin-left: 5%;
+}
+
+.fixed-background {
+	background-image: url("../img/contact_background.JPG");
+	background-attachment: fixed;
+	background-size: cover;
+	box-shadow: inset 500px 0 500px 0 rgba(0,0,0,0.1);
+  width: 100%;
+  padding: 5%;
+  height: 100%;
+}
+
+.basic_contact {
+	float: left;
+	margin-bottom: 30px;
+}
+
+.social {
+	margin-top: 20px;
+}
+
+.social a {
+	margin-right: 5px;
+}
+
+.contact-form {
+	float: right;
+}
+
+.name,
+.number {
+	width: 49%;
+}
+
+.name {
+	float: left;
+	margin-right: 2%;
+}
+
+.number {
+	float: right;
+}
+
+.contact-form button {
+	margin-top: 15px;
+	float: right;
+}
+
+span.push:hover {
+	color: blue;
+}
+
+
+/* FOOTER */
+
+footer {
+	height: 41px;
+	border-top: 1px solid darkgrey;
+	background-color: lightgrey; 
+}
+
+#twitter,
+#facebook,
+#copyright {
+	display: inline-block;
+	margin: 10px;
+	height: 20px;
+}
+
+#twitter,
+#facebook {
+	float: left;
+}
+
+
+#copyright {
+	float: right;
+}
+
+#copyright p {
+	margin-bottom: 0;
 }
