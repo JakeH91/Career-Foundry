@@ -56,7 +56,7 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#work">Work</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#learn">Learn More</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div> <!-- END navbar-collapse -->
@@ -220,9 +220,27 @@ col-xs-6 col-sm-offset-0 col-sm-4 col-md-3">
     <hr>
   </div> <!-- END WORK CONTAINER -->
 
-  <!-- FAQ -->
-  <div class="container faq-container" id="faq">
-    <h1>Frequently Asked Questions</h1>
+  <!-- LEARN MORE -->
+  <div class="container" id="learn">
+    <div class="row learn-row">
+      <h1 class="learn-more">Learn More</h1>
+      <button class="btn btn-primary modal-button" data-toggle="modal" data-target=".bs-example-modal-lg">View Resume</button>
+      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="static"  data-keyboard="false">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="myModalLabel">My Resume</h4>
+              <button type="button modal-exit" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <p>Below is a copy of my resume. As you will see, I have mainly worked in bars and restaurants for the last few years to subsidize my travelling lifestyle. I have gained a lot of useful skills and experience in this industry, but I now desire to move on to something more challenging and creative.</p>
+              <p>Feel free to skim over the contents, or download a copy for yourself.</p>
+              <embed id="modalembed" src="docs/jake-hill-cv.pdf">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <p>If you are interested in finding out a little more about me, below are the answers to a few questions you may have.</p>
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
       <div class="panel panel-default">
@@ -290,7 +308,7 @@ col-xs-6 col-sm-offset-0 col-sm-4 col-md-3">
       <h1>Contact Me</h1>
       <p>Still have some unanswered questions? Feel free to add me on social media, or send me a message directly!</p>
     </div>
-    <div class="fixed-background">
+    <div class="fixed-background" data-stellar-background-ratio="0.5">
       <div class="row">
         <div class="col-xs-12 col-sm-5 basic_contact">
           <h2>Add Me...</h2>
@@ -356,6 +374,12 @@ col-xs-6 col-sm-offset-0 col-sm-4 col-md-3">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+  
+
+  <script type="text/javascript">
+    $(".fixed-background").stellar();
+  </script>
 
   <script type="text/javascript">
   var $root = $('html, body');

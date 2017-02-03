@@ -129,7 +129,39 @@ blockquote {
 }
 
 
-/* FAQ */
+/* LEARN MORE */
+
+.learn-row {
+	padding: 0 15px;
+}
+
+.learn-more {
+	margin: 0;
+	text-align: left;
+	float: left;
+}
+
+.modal-button {
+	float: right;
+}
+
+.modal-header {
+	height: 55px;
+}
+
+.modal-title {
+	float: left;
+}
+
+.modal-exit {
+	float: right;
+}
+
+#modalembed {
+    height: 500px;
+    width: 100%;
+    padding: 10px;
+}
 
 .panel-default>.panel-heading {
 	background-color: #CFE4E4;
@@ -148,11 +180,9 @@ blockquote {
 .contact-container {
 	width: 100%;
 	padding: 39px 0 0;
-	color: white;
 }
 
 .contact-container h2 {
-	color: white;
 	font-weight: 900;
 }
 
@@ -168,6 +198,7 @@ blockquote {
   width: 100%;
   padding: 5%;
   height: 100%;
+  color: white;
 }
 
 .basic_contact {
