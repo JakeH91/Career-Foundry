@@ -1,3 +1,5 @@
+/* GENERAL */
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -40,6 +42,7 @@ p {
 	padding-top: 50px;
 }
 
+
 /* HOME STYLINGS */
 
 .projectName,
@@ -77,7 +80,8 @@ ul.nav {
 	margin: 0 10% 5%;
 }
 
-.intro {
+.intro,
+.skills h2 {
 	text-align: center;
 }
 
@@ -85,17 +89,9 @@ blockquote {
 	border-left: none;
 }
 
-.intro p {
-	margin-top: 3em;
-}
-
+.intro p,
 .skills {
 	margin-top: 3em;
-}
-
-
-.skills h2 {
-	text-align: center;
 }
 
 .skills ul {
@@ -115,7 +111,6 @@ blockquote {
 	padding-top: 20px;
 }
 
-
 /* WORK */
 
 .work-image {
@@ -132,29 +127,26 @@ blockquote {
 /* LEARN MORE */
 
 .learn-row {
-	padding: 0 15px;
+	padding: 30px 15px 0;
 }
 
 .learn-more {
 	margin: 0;
 	text-align: left;
+}
+
+.learn-more,
+.modal-title {
 	float: left;
 }
 
-.modal-button {
+.modal-button,
+.modal-exit {
 	float: right;
 }
 
 .modal-header {
 	height: 55px;
-}
-
-.modal-title {
-	float: left;
-}
-
-.modal-exit {
-	float: right;
 }
 
 #modalembed {
@@ -201,7 +193,7 @@ blockquote {
   color: white;
 }
 
-.basic_contact {
+.basic-contact {
 	float: left;
 	margin-bottom: 30px;
 }

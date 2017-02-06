@@ -123,27 +123,21 @@
         <p>
           With this portfolio I would like to both demonstrate my abilities and showcase my work. I have worked with a lot of other online courses, so I would like to link to my progress within each course. I have also collaborated with a start up company in Trondheim, Norway, so would like to highlight the work I have done with them. I will add any other work to this site as it comes.
         </p>
-        <p>
-          <a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-        </p>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="More information">View details &raquo;</button>
       </div><!-- END COL -->
       <div class="col-md-4">
         <h2>Project Goals</h2>
         <p>
           I have so far given myself goals for the first 2 sections of the Career Foundry course. I would like to complete the first section by the 1st of February, and the second section by the 22nd of February. I would like to complete these first sections fairly quickly as I have quite a lot of experience with Front End Development already, so am eager to advance to the Back End material.
         </p>
-        <p>
-          <a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-        </p>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="More information">View details &raquo;</button>
      </div><!-- END COL -->
       <div class="col-md-4">
         <h2>Course Goals</h2>
         <p>
           By completing this course, I hope to finally move away from working in bars and restaurants, and into a career where I can create and enjoy an ongoing learning experience. I have a lot of ambitions for this career change, but my initial goal is to work for a company solidly for 1 year to take my Web Development skills to the next level.
         </p>
-        <p>
-          <a class="btn btn-default" href="#" role="button">View details &raquo;</a>
-        </p>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="More information">View details &raquo;</button>
       </div><!-- END COL -->
     </div><!-- END ROW -->
     <hr>
@@ -181,7 +175,7 @@ col-xs-6 col-sm-offset-0 col-sm-4 col-md-3">
     <div class="main-text">
       <h2>My Story</h2>
       <p>
-        Over the last few years I have visited a lot of different places and have had some quite unique experiences. A lot of my most memorable moments have been made possible thanks to certain websites, a lot of which have all had a similar money-free philosophy. This has lead me to believe that I might be able to do some good in this world, through programming. If you want to know more about my mission, ask away!
+        Over the last few years I have visited a lot of different places and have had some quite unique experiences. A lot of my most memorable moments have been made possible thanks to certain websites, a lot of which have all had a similar money-free philosophy. This has lead me to believe that I might be able to do some good in this world, through programming. If you want to know more about my mission, <a href="#contact" title="Send me a message!" id="ask" data-placement="right">ask away</a>.
       </p>
     </div> <!-- END main-text -->
     <hr>
@@ -310,7 +304,7 @@ col-xs-6 col-sm-offset-0 col-sm-4 col-md-3">
     </div>
     <div class="fixed-background" data-stellar-background-ratio="0.5">
       <div class="row">
-        <div class="col-xs-12 col-sm-5 basic_contact">
+        <div class="col-xs-12 col-sm-5 basic-contact">
           <h2>Add Me...</h2>
           <h3 class="email">
             <span class="glyphicon glyphicon-envelope push"></span>
@@ -327,7 +321,7 @@ col-xs-6 col-sm-offset-0 col-sm-4 col-md-3">
             <a href="https://twitter.com/JakeREHill" class="links"><img title="Twitter" src="img/twitter.png"></a>
             <a href="https://www.freecodecamp.com/jakeh91" class="links"><img title="FreeCodeCamp" src="img/freecodecamp.png"></a>
           </div> 
-        </div> <!-- END basic_contact -->
+        </div> <!-- END basic-contact -->
         
         <div class="col-xs-12 col-md-7 contact-form">
           <h2>Or Say Hello!</h2>
@@ -379,6 +373,18 @@ col-xs-6 col-sm-offset-0 col-sm-4 col-md-3">
 
   <script type="text/javascript">
     $(".fixed-background").stellar();
+  </script>
+
+  <script type="text/javascript">
+    $(function () {
+      $("#ask").tooltip();
+    });
+  </script>
+
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
   </script>
 
   <script type="text/javascript">
