@@ -223,9 +223,24 @@ blockquote {
 	float: right;
 }
 
+#char-count {
+	color: black;
+	float: right;
+	margin: 0;
+	position: relative;
+	right: 15px;
+	bottom: 25px;
+}
+
 .contact-form button {
 	margin-top: 15px;
 	float: right;
+	clear: both;
+}
+
+.move-up {
+	position: relative;
+	bottom: 20px;
 }
 
 span.push:hover {

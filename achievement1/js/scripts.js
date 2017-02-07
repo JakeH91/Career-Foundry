@@ -36,19 +36,46 @@ $(document).ready(function(){
     return false;
   });
 
-  $("#message").css("background-color", "red");
-  $("#message").css("color", "white");
 
+  // Display Message
   $("#form-button").on("click", function(){
-  	var name = $("#name").val();
-  	var comment = $("#message").val();
-  	$("#visible-name").html("Message sent by " + name.toUpperCase());
-  	$("#visible-comment").html("Message:<br />" + comment);
-  	$("#name").hide();
-  	$("#number").hide();
-  	$("#email").hide();
-  	$("#message").hide();
-  	$("#form-button").hide();
+  	if($("#message").val() === ""){
+  		$("#message").css("border", "1px solid red");
+  	}
+  	else{
+	  	var name = $("#name").val();
+	  	var comment = $("#message").val();
+	  	$("#visible-name").html("Message sent by " + name.toUpperCase());
+	  	$("#visible-comment").html("Message:<br />" + comment);
+	  	$("#name").hide();
+	  	$("#number").hide();
+	  	$("#email").hide();
+	  	$("#message").hide();
+	  	$("#form-button").hide();
+  	}
+  	
   	return false;
+  });
+
+
+  // Show character count for message
+  $("#message").on("keyup", function(){
+  	var charCount = $(this).val().length;
+  	if(charCount == 0){
+  		$("#char-count").hide();
+  		$("#form-button").removeClass("move-up");
+  	}
+  	else {
+  		$("#char-count").show();
+  		$("#char-count").html(charCount);
+  		$("#form-button").addClass("move-up");
+  	}
+
+  	if(charCount > 50){
+  		$("#char-count").css("color", "red");
+  	}
+  	else {
+  		$("#char-count").css("color", "black");
+  	}
   });
 });
