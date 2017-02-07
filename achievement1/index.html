@@ -10,6 +10,7 @@
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
+  <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora|Overpass" rel="stylesheet">
   <!-- Custom styles for this template go here -->
   <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -22,15 +23,6 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-  </script>
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
       
@@ -46,7 +38,7 @@
         </button>
         
         <div class="projectName navbar-brand">
-          <a href="#">Jake Hill</a>
+          <a href="#carousel-example-generic">Jake Hill</a>
         </div> <!--end projectName -->
       
       </div> <!--end navbar-header -->
@@ -329,6 +321,8 @@ col-xs-6 col-sm-offset-0 col-sm-4 col-md-3">
             <div class="form-group name">
               <label for="name" class="sr-only">Name</label>
               <input type="text" class="form-control" id="name" placeholder="Please enter your name...">
+              <p id="visible-name"></p>
+              <p id="visible-comment"></p>
             </div>
 
             <div class="form-group number">
@@ -342,7 +336,8 @@ col-xs-6 col-sm-offset-0 col-sm-4 col-md-3">
             </div>
             <label for="message" class="sr-only">Message</label>
             <textarea placeholder="What would you like to say?" class="form-control" id="message" style="resize:none" cols="30" rows="5" required=”required”></textarea>
-            <button type="submit" class="btn btn-primary">Send!</button>
+            
+            <button type="submit" id="form-button" class="btn btn-primary">Send!</button>
           </form>  
         </div> <!-- END contact-form -->
       </div>
@@ -369,38 +364,7 @@ col-xs-6 col-sm-offset-0 col-sm-4 col-md-3">
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
-  
-
-  <script type="text/javascript">
-    $(".fixed-background").stellar();
-  </script>
-
-  <script type="text/javascript">
-    $(function () {
-      $("#ask").tooltip();
-    });
-  </script>
-
-  <script>
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip();
-    });
-  </script>
-
-  <script type="text/javascript">
-  var $root = $('html, body');
-    $('.navbar-nav a').click(function() {
-        var href = $.attr(this, 'href');
-        $root.animate({
-            scrollTop: $(href).offset().top
-        }, 500, function () {
-            window.location.hash = href;
-        });
-        return false;
-    });
-  </script>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-  </script>
+  <script type="text/javascript" src="js/scripts.js"></script>
 
 </body>
 </html>

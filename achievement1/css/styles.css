@@ -16,22 +16,22 @@ body {
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 2.1em;
 }
 
 h2 {
-	font-size: 1.7em;
+	font-size: 1.8em;
 }
 
 h3 {
-	font-size: 1.4em;
+	font-size: 1.5em;
 }
 
 h1,
 h2,
 h3,
 h4 {
-	font-family: 'Lora', serif;
+	font-family: 'Sansita', serif;
 }
 
 p {
@@ -62,9 +62,8 @@ ul.nav {
 	left: 15%;
 }
 
-.carousel-caption h3,
+.carousel-caption h1,
 .carousel-caption p {
-	background-color: rgba(0,0,0,.3);
 	padding: 5px;
 }
 
