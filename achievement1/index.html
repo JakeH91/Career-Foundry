@@ -319,24 +319,31 @@ col-xs-6 col-sm-offset-0 col-sm-4 col-md-3">
           <h2>Or Say Hello!</h2>
           <form>
             <div class="form-group name">
-              <label for="name" class="sr-only">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Please enter your name...">
+              <label for="name" class="sr-only">Full Name</label>
+              <p class="title"></p>
+              <input type="text" class="form-control" id="name" placeholder="Please enter your full name...">
               <p id="visible-name"></p>
               <p id="visible-comment"></p>
             </div>
 
             <div class="form-group number">
               <label for="number" class="sr-only">Phone Number (optional)</label>
+              <p class="title"></p>
               <input type="number" class="form-control" id="number" placeholder="and number (optional)...">
             </div>
 
-            <div class="form-group">
-              <label for="email" class="sr-only">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="And your email address..." required=”required”>
+            <div class="form-group email">
+              <label for="email" class="sr-only">Email Address</label>
+              <p class="title"></p>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email address..." required=”required”>
             </div>
-            <label for="message" class="sr-only">Message</label>
-            <textarea placeholder="What would you like to say?" class="form-control" id="message" style="resize:none" cols="30" rows="5" required=”required”></textarea>
-            <p id="char-count"></p>
+            <div class="form-group">
+              <label for="message" class="sr-only">Message</label>
+              <p class="title"></p>
+              <textarea placeholder="What would you like to say?" class="form-control" id="message" style="resize:none" cols="30" rows="5" required=”required”></textarea>
+              <p id="char-count"></p>
+            </div>
+              
             
             <button type="submit" id="form-button" class="btn btn-primary">Send!</button>
           </form>  

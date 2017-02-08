@@ -58,17 +58,28 @@ $(document).ready(function(){
   });
 
 
+  // Show title of form area
+  $(".form-control").on("keyup", function(){
+    var charCount = $(this).val().length;
+    if(charCount > 0){
+      var title = $(this).siblings("label").html();
+      $(this).siblings(".title").html(title).show(200);
+    }
+    else {
+      $(this).siblings(".title").hide(200);
+    }
+  });
+
+
   // Show character count for message
   $("#message").on("keyup", function(){
   	var charCount = $(this).val().length;
   	if(charCount == 0){
   		$("#char-count").hide();
-  		$("#form-button").removeClass("move-up");
   	}
   	else {
   		$("#char-count").show();
   		$("#char-count").html(charCount);
-  		$("#form-button").addClass("move-up");
   	}
 
   	if(charCount > 50){

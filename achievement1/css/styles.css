@@ -209,9 +209,27 @@ blockquote {
 	float: right;
 }
 
+.form-group {
+	position: relative;
+}
+
+.form-control {
+	padding-top: 10px;
+	height: 44px;
+}
+
+.title {
+	position: absolute;
+	top: 2px;
+	left: 4px;
+	font-size: 10px;
+	color: blue;
+}
+
 .name,
 .number {
 	width: 49%;
+	height: 44px;
 }
 
 .name {
@@ -223,24 +241,23 @@ blockquote {
 	float: right;
 }
 
+.email {
+	clear: both;
+	height: 44px;
+}
+
 #char-count {
 	color: black;
 	float: right;
 	margin: 0;
-	position: relative;
-	right: 15px;
-	bottom: 25px;
+	position: absolute;
+	right: 12px;
+	bottom: 4px;
 }
 
 .contact-form button {
-	margin-top: 15px;
 	float: right;
 	clear: both;
-}
-
-.move-up {
-	position: relative;
-	bottom: 20px;
 }
 
 span.push:hover {
