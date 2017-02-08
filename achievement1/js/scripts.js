@@ -52,6 +52,7 @@ $(document).ready(function(){
 	  	$("#email").hide();
 	  	$("#message").hide();
 	  	$("#form-button").hide();
+      $(".title").hide();
   	}
   	
   	return false;
@@ -89,4 +90,19 @@ $(document).ready(function(){
   		$("#char-count").css("color", "black");
   	}
   });
+
+
+  // Append work images/links to work section
+  for(var i = 0; i < works.length; i++){
+    $("#work").append('<div class="col-md-3 col-xs-6">\
+        <a href="' + works[i][0] + '"><img class="work-image" src="' + works[i][1] + '" alt="' + works[i][2] + '" title="' + works[i][2] + '"></a>\
+      </div>');
+    var images = $("#work img");
+    if(i%2 === 0){
+      $(images[i]).css("border", "1px solid DodgerBlue");
+    }
+    else {
+      $(images[i]).css("border", "1px solid salmon");
+    }
+  };
 });
