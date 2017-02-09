@@ -5,12 +5,12 @@ var works = [
 		title: "Calculator"
 	},
 	{
-		href: "#",
+		href: "#work",
 		src: "img/work-placeholder.jpg",
 		title: "Work Screenshot"
 	},
 	{
-		href: "#",
+		href: "#work",
 		src: "img/work-placeholder.jpg",
 		title: "Work Screenshot"
 	}
