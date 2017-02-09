@@ -116,10 +116,41 @@ blockquote {
 	margin: 5%;
 	width: 90%;
 	border: 1px solid black;
+	position: relative;
 }
 
 .work-image:hover {
 	box-shadow: 2px 2px 5px black;
+}
+
+.info {
+	position: absolute;
+	bottom: 6%;
+	left: 5%;
+	width: 90%;
+	background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  font-family: "Sansita", serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+  line-height: 1.6;
+  text-align: left;
+  display: none;
+}
+
+.proj-title,
+.actual-title {
+	margin-bottom: 0;
+	padding: 5px;
+}
+
+.proj-title {
+	font-weight:100;
+}
+
+.actual-title {
+	text-align: right;
 }
 
 
@@ -223,6 +254,10 @@ blockquote {
 	top: 2px;
 	left: 4px;
 	font-size: 10px;
+	color: #b3b3b3;
+}
+
+.form-control:focus + .title {
 	color: blue;
 }
 
