@@ -228,6 +228,11 @@ blockquote {
 	margin-bottom: 30px;
 }
 
+#map {
+	height: 300px;
+	width: 100%;
+}
+
 .social {
 	margin-top: 20px;
 }
@@ -242,6 +247,7 @@ blockquote {
 
 .form-group {
 	position: relative;
+	margin-bottom: 20px;
 }
 
 .form-control {
@@ -278,7 +284,6 @@ blockquote {
 
 .email {
 	clear: both;
-	height: 44px;
 }
 
 #char-count {

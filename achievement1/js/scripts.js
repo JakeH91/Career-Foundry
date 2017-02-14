@@ -121,3 +121,11 @@ $(document).ready(function(){
     $(this).siblings(".info").hide();
   })
 });
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: {lat: 63.4241837, lng: 10.3832649},
+    zoom: 13
+  });
+}
