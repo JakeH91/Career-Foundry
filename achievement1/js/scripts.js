@@ -122,10 +122,18 @@ $(document).ready(function(){
   })
 });
 
-var map;
 function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: {lat: 63.4241837, lng: 10.3832649},
+  var myLatLng = {lat: 63.4241837, lng: 10.3832649}
+
+  var map = new google.maps.Map(document.getElementById("map"), {
+    center: myLatLng,
     zoom: 13
   });
+
+  var marker = new google.maps.Marker({
+    map: map,
+    position: myLatLng,
+    title: "My Home",
+    animation: google.maps.Animation.DROP
+  })
 }
