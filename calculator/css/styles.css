@@ -1,13 +1,13 @@
-.container,
+.calc,
 .screen,
-.button {
+button {
 	border: 1px solid black;
 	border-radius: 5px;	
 }
 
-.container {
+.calc {
 	width: 320px;
-	height: 400px;
+	height: 470px;
 	margin: 30px auto;
 	background-color: #D5C9B1;
 }
@@ -17,13 +17,21 @@
 	height: 60px;
 	margin: 10px;
 	background-color: #e8f2ee;
+	padding: 10px;
+	text-align: right;
 }
 
 .screen:hover {
 	cursor: text;
 }
 
-.button {
+.text {
+	margin-top: 20px; 
+	height: 20px;
+}
+
+button,
+.btn-group {
 	width: 58px;
 	height: 58px;
 	margin: 10px;
@@ -35,17 +43,29 @@
 	font-size: 14px;
 }
 
-.button p {
-	margin-top: 22px;
-	border: none;
+button.small {
+	width: 50%;
+	margin: 0;
 }
 
-.button:hover {
+button.small:first-of-type {
+	border-radius: 5px 0 0 5px;
+}
+
+button.small:last-of-type {
+	border-radius: 0 5px 5px 0;
+}
+
+button:hover {
 	cursor: pointer;
 }
 
-.button:active {
+button:active {
 	-moz-box-shadow:    inset 1px 1px 5px #41765e;
   -webkit-box-shadow: inset 1px 1px 5px #41765e;
   box-shadow:         inset 1px 1px 5px #41765e;
+}
+
+button:focus {
+	outline: none;
 }
