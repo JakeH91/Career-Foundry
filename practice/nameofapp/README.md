@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+My name is Jake Hill and this app is my first introduction to Ruby on Rails.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+I have spent a few weeks studying Ruby now (primarily through the Head First book, but also through online resources like RubyMonk), and am ready to dive deeper into Rails.
