@@ -79,8 +79,7 @@ ul.nav {
 	margin: 0 10% 5%;
 }
 
-.intro,
-.skills h2 {
+.intro{
 	text-align: center;
 }
 
@@ -88,26 +87,96 @@ blockquote {
 	border-left: none;
 }
 
-.intro p,
-.skills {
+.intro p{
 	margin-top: 3em;
-}
-
-.skills ul {
-	padding-left: 0;
-	list-style: none;
-	text-align: left;
-	float: left;
-	width: 50%;
-}
-
-#skill-list li {
-	padding-bottom: 5px;
 }
 
 .main-text {
 	clear: both;
 	padding-top: 20px;
+}
+
+#skill-list{
+	padding-left: 0;
+	list-style: none;
+	display: flex;
+  justify-content: space-between;
+	width: 80%;
+	margin: 0 10%;
+
+}
+
+.skill-description{
+	position: relative;
+	width: 98%;
+	margin: 1%;
+	padding: 10px;
+	background-color: #563E7C;
+	border-radius: 5px; 
+}
+
+.skill-icon, .triangle-pointer{
+	position: relative;
+	display: inline-block;
+	width: 46px;
+	height: 46px;
+	border-radius: 23px;
+	background-color: black;
+	border: 2px solid white;
+}
+
+.skill-icon:hover{
+	cursor: pointer;
+}
+
+.triangle-pointer:before {
+	top: 70%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: white;
+	border-width: 20px;
+	margin-left: -20px;
+}
+
+.skill-icon img {
+	position: relative;
+	top: 6px;
+	left:6px;
+}
+
+.skills-info{
+	display: none;
+	margin: 2%;
+	width: 96%;
+	padding: 10px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.skills-info ul{
+	list-style: none;
+	padding-left: 20px;
+}
+
+.github-repos{
+	clear: both;
+	padding-top: 10px;
+}
+
+.github-repos ul{
+	display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.github-repos li{
+	display: inline-block;
 }
 
 /* WORK */

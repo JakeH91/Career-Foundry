@@ -1,6 +1,78 @@
 // Twitter
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 
+var js_skills = {
+  title: "JavaScript",
+  books: [["Head First JavaScript", "https://www.goodreads.com/book/show/1760441.Head_First_JavaScript"],
+          ["Eloquent JavaScript", "http://eloquentjavascript.net/"]],
+  courses: [["Career Foundry", "https://careerfoundry.com"],
+            ["CodeSchool", "https://www.codeschool.com/learn/javascript"],
+            ["FreeCodeCamp", "https://www.freecodecamp.com/jakeh91"],
+            ["Codecademy", "https://www.codecademy.com/learn/javascript"]],
+  github: [["Head First", "https://github.com/JakeH91/headfirst/tree/master/javascript"],
+          ["Calculator", "https://github.com/JakeH91/Career-Foundry/tree/master/calculator"],
+          ["Portfolio", "https://github.com/JakeH91/Career-Foundry/tree/master/portfolio"]]
+}
+
+var css_skills = {
+  title: "CSS",
+  books: [["Head First JavaScript", "https://www.goodreads.com/book/show/1760441.Head_First_JavaScript"],
+          ["Eloquent JavaScript", "http://eloquentjavascript.net/"]],
+  courses: [["Career Foundry", "https://careerfoundry.com"],
+            ["CodeSchool", "https://www.codeschool.com/learn/javascript"],
+            ["FreeCodeCamp", "https://www.freecodecamp.com/jakeh91"],
+            ["Codecademy", "https://www.codecademy.com/learn/javascript"]],
+  github: [["Head First", "https://github.com/JakeH91/headfirst/tree/master/javascript"],
+          ["Calculator", "https://github.com/JakeH91/Career-Foundry/tree/master/calculator"],
+          ["Portfolio", "https://github.com/JakeH91/Career-Foundry/tree/master/portfolio"]]
+}
+
+var html_skills = {
+  title: "HTML",
+  books: [["Head First JavaScript", "https://www.goodreads.com/book/show/1760441.Head_First_JavaScript"],
+          ["Eloquent JavaScript", "http://eloquentjavascript.net/"]],
+  courses: [["Career Foundry", "https://careerfoundry.com"],
+            ["CodeSchool", "https://www.codeschool.com/learn/javascript"],
+            ["FreeCodeCamp", "https://www.freecodecamp.com/jakeh91"],
+            ["Codecademy", "https://www.codecademy.com/learn/javascript"]],
+  github: [["Head First", "https://github.com/JakeH91/headfirst/tree/master/javascript"],
+          ["Calculator", "https://github.com/JakeH91/Career-Foundry/tree/master/calculator"],
+          ["Portfolio", "https://github.com/JakeH91/Career-Foundry/tree/master/portfolio"]]
+}
+
+var bootstrap_skills = {
+  title: "Bootstrap",
+  books: [["Head First JavaScript", "https://www.goodreads.com/book/show/1760441.Head_First_JavaScript"],
+          ["Eloquent JavaScript", "http://eloquentjavascript.net/"]],
+  courses: [["Career Foundry", "https://careerfoundry.com"],
+            ["CodeSchool", "https://www.codeschool.com/learn/javascript"],
+            ["FreeCodeCamp", "https://www.freecodecamp.com/jakeh91"],
+            ["Codecademy", "https://www.codecademy.com/learn/javascript"]],
+  github: [["Head First", "https://github.com/JakeH91/headfirst/tree/master/javascript"],
+          ["Calculator", "https://github.com/JakeH91/Career-Foundry/tree/master/calculator"],
+          ["Portfolio", "https://github.com/JakeH91/Career-Foundry/tree/master/portfolio"]]
+}
+
+function destroyInfo(){
+  $(".books ul").html("");
+  $(".courses ul").html("");
+  $(".github-repos ul").html("");
+}
+
+function createInfo(skill){
+  $(".skills-info").find("h3").text(skill.title);
+  $.each(skill.books, function(index, value){
+    $(".books ul").append("<li><a href='" + value[1] + "'>" + value[0] + "</a></li>");
+  })
+  $.each(skill.courses, function(index, value){
+    $(".courses ul").append("<li><a href='" + value[1] + "'>" + value[0] + "</a></li>");
+  })
+  $.each(skill.github, function(index, value){
+    $(".github-repos ul").append("<li><a href='" + value[1] + "'>" + value[0] + "</a></li>");
+  })
+}
+
+
 $(document).ready(function(){
 	// Stellar
 	$(".fixed-background").stellar();
@@ -25,6 +97,25 @@ $(document).ready(function(){
         window.location.hash = href;
     });
     return false;
+  });
+
+  // Display Info of Skills
+  $(".skill-icon").on("click", function(){
+    destroyInfo();
+    var str = $(this).attr("id");
+    createInfo(window[str]);
+    if($(this).hasClass("triangle-pointer")){
+      $(".skills-info").slideUp();
+      $(this).removeClass("triangle-pointer");
+    }
+    else if($(this).siblings().hasClass("triangle-pointer")){
+      $(this).siblings().removeClass("triangle-pointer");
+      $(this).addClass("triangle-pointer");
+    }
+    else{
+      $(".skills-info").slideDown();
+      $(this).addClass("triangle-pointer");
+    }    
   });
 
 
