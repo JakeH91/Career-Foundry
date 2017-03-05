@@ -16,41 +16,34 @@ var js_skills = {
 
 var css_skills = {
   title: "CSS",
-  books: [["Head First JavaScript", "https://www.goodreads.com/book/show/1760441.Head_First_JavaScript"],
-          ["Eloquent JavaScript", "http://eloquentjavascript.net/"]],
+  books: [],
   courses: [["Career Foundry", "https://careerfoundry.com"],
-            ["CodeSchool", "https://www.codeschool.com/learn/javascript"],
-            ["FreeCodeCamp", "https://www.freecodecamp.com/jakeh91"],
-            ["Codecademy", "https://www.codecademy.com/learn/javascript"]],
-  github: [["Head First", "https://github.com/JakeH91/headfirst/tree/master/javascript"],
-          ["Calculator", "https://github.com/JakeH91/Career-Foundry/tree/master/calculator"],
-          ["Portfolio", "https://github.com/JakeH91/Career-Foundry/tree/master/portfolio"]]
+            ["FreeCodeCamp", "https://www.freecodecamp.com/jakeh91"]],
+  github: []
 }
 
 var html_skills = {
   title: "HTML",
-  books: [["Head First JavaScript", "https://www.goodreads.com/book/show/1760441.Head_First_JavaScript"],
-          ["Eloquent JavaScript", "http://eloquentjavascript.net/"]],
+  books: [],
   courses: [["Career Foundry", "https://careerfoundry.com"],
-            ["CodeSchool", "https://www.codeschool.com/learn/javascript"],
-            ["FreeCodeCamp", "https://www.freecodecamp.com/jakeh91"],
-            ["Codecademy", "https://www.codecademy.com/learn/javascript"]],
-  github: [["Head First", "https://github.com/JakeH91/headfirst/tree/master/javascript"],
-          ["Calculator", "https://github.com/JakeH91/Career-Foundry/tree/master/calculator"],
-          ["Portfolio", "https://github.com/JakeH91/Career-Foundry/tree/master/portfolio"]]
+            ["FreeCodeCamp", "https://www.freecodecamp.com/jakeh91"]],
+  github: []
 }
 
 var bootstrap_skills = {
   title: "Bootstrap",
-  books: [["Head First JavaScript", "https://www.goodreads.com/book/show/1760441.Head_First_JavaScript"],
-          ["Eloquent JavaScript", "http://eloquentjavascript.net/"]],
+  books: [],
   courses: [["Career Foundry", "https://careerfoundry.com"],
-            ["CodeSchool", "https://www.codeschool.com/learn/javascript"],
-            ["FreeCodeCamp", "https://www.freecodecamp.com/jakeh91"],
-            ["Codecademy", "https://www.codecademy.com/learn/javascript"]],
-  github: [["Head First", "https://github.com/JakeH91/headfirst/tree/master/javascript"],
-          ["Calculator", "https://github.com/JakeH91/Career-Foundry/tree/master/calculator"],
-          ["Portfolio", "https://github.com/JakeH91/Career-Foundry/tree/master/portfolio"]]
+            ["FreeCodeCamp", "https://www.freecodecamp.com/jakeh91"]],
+  github: []
+}
+
+var ruby_skills = {
+  title: "Ruby",
+  books: [["Head First Ruby", "https://www.goodreads.com/book/show/23466394-head-first-ruby", "37%"]],
+  courses: [["Career Foundry", "https://careerfoundry.com"],
+            ["FreeCodeCamp", "https://www.freecodecamp.com/jakeh91"]],
+  github: []
 }
 
 function destroyInfo(){
