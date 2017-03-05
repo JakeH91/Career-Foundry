@@ -3,8 +3,8 @@
 
 var js_skills = {
   title: "JavaScript",
-  books: [["Head First JavaScript", "https://www.goodreads.com/book/show/1760441.Head_First_JavaScript"],
-          ["Eloquent JavaScript", "http://eloquentjavascript.net/"]],
+  books: [["Head First JavaScript", "https://www.goodreads.com/book/show/1760441.Head_First_JavaScript", "27%"],
+          ["Eloquent JavaScript", "http://eloquentjavascript.net/", "13%"]],
   courses: [["Career Foundry", "https://careerfoundry.com"],
             ["CodeSchool", "https://www.codeschool.com/learn/javascript"],
             ["FreeCodeCamp", "https://www.freecodecamp.com/jakeh91"],
@@ -62,7 +62,8 @@ function destroyInfo(){
 function createInfo(skill){
   $(".skills-info").find("h3").text(skill.title);
   $.each(skill.books, function(index, value){
-    $(".books ul").append("<li><a href='" + value[1] + "'>" + value[0] + "</a></li>");
+    $(".books ul").append("<li><a href='" + value[1] + "'>" + value[0] + "</a><span class='progress'><span class='complete' id='complete" + index +"'></span></span></li>");
+    $("#complete" + index).css("width", value[2]);
   })
   $.each(skill.courses, function(index, value){
     $(".courses ul").append("<li><a href='" + value[1] + "'>" + value[0] + "</a></li>");
